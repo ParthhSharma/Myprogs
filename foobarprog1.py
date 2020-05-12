@@ -31,16 +31,14 @@
 
 import math
 l_i_s_t = []
-class solution:
-    @staticmethod
-    def solution(area):
-        A = int(area)
-        while A>0:
-            if((math.sqrt(A) - math.floor(math.sqrt(A))) == 0):
-                l_i_s_t.append(A)
-                A = area - A
-                return(solution.solution(A))
-            else:
-                A -= 1
-        return l_i_s_t
+def solution(area):
+    A = int(area)
+    while A>0:
+        if((math.sqrt(A) - math.floor(math.sqrt(A))) == 0):
+            l_i_s_t.append(A)
+            A = area - A
+            return(solution.solution(A))
+        else:
+            A -= 1
+    return l_i_s_t
 solution.solution(15324)

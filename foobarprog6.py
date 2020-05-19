@@ -41,6 +41,7 @@
 # solution.solution([1, 1, 1])
 # Output:
 #     1
+#============solution=======================
 
 def multiples(l,i):
     current = l[i]

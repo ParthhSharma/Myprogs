@@ -35,7 +35,7 @@
 #
 # range (0, 5)
 # Here, the range loops over  to 4.
-# 5 is excluded.
+# 5 is excluded..
 def count_substring(strng,sbstrng):
     c = 0
     while strng.find(sbstrng)!=-1:
